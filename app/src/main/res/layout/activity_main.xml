@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#2196F3"
+    android:paddingTop="30dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Poli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Politeknik Negeri Semarang"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:translationY="50dp"
+        card_view:cardCornerRadius="70dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Profile Dosen Informatika"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_dosen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="90dp"
+            tools:listitem="@layout/card_dosen" />
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+

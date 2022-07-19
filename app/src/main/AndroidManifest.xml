@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dosen">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Dosen">
+        <activity
+            android:name=".Profil"
+            android:exported="true"
+            android:label="Profil"/>
+        <activity
+            android:theme="@style/Theme.AppCompat"
+            android:name=".splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Detail Dosen"
+            android:name=".Detail"
+            android:exported="true" />
+        <activity
+            android:label="Dosen Polines"
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
